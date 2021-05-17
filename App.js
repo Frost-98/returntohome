@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Alert, TextInput, StyleSheet, View, Text, Button, DatePickerAndroid} from "react-native";
+import {Alert, TextInput, StyleSheet, View, Text, Button, Image, DatePickerAndroid} from "react-native";
 import { render } from 'react-dom';
 import Loading from "./Loading";
 import * as Location from "expo-location";
@@ -55,8 +55,6 @@ export default class extends React.Component {
       }
       BusStationAroundList[i] = xmlDoc.getElementsByTagName("stationId")[i].childNodes[0].nodeValue;
     }
-    //console.log(latitude);
-    //console.log(longitude);
   }
 
   getLocation = async () => {
